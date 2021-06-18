@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login a Mi Tiendita  </title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+    crossorigin="anonymous"
+  />
+
+  <!-- JavaScript Bundle with Popper -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./login.js"></script>
+
+</head>
+
+
+<body >
+    
+        <h1 style="background-color: coral;"> <img src="./imagenes/obrero.png" style="width: 5%;"> Ingrese su cuenta de Mi Tiendita </h1>
+        <div class="container" style="border: 1px; grid: 1px; background:aliceblue ;">
+
+    <form>
+        <div class="mb-3">
+          <label for="emaillogin" class="form-label">Ingrese su correo</label>
+          <input type="email" class="form-control" id="emaillogin" onkeyup="validar()" placeholder="Bob@gmail.com">
+          <div class="col col-lg-2" id="errorEmail">
+            ***
+        </div>
+        </div>
+        <div class="mb-3">
+          <label for="passwordlogin" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="passwordlogin" onkeyup="validar()" placeholder="Construye123">
+          <div class="col col-lg-2" id="errorPassword">
+            ***
+        </div>
+        </div>
+        <div class="mb-3">
+            <label for="confirmarpasswordlogin" class="form-label">Confirmar Contraseña</label>
+            <input type="password" class="form-control" id="confirmarpasswordlogin" onkeyup="validar()" placeholder="Construye123">
+            <div class="col col-lg-2" id="errorConfirmar">
+              ***
+          </div>
+          </div>
+          <input type="button" class="btn btn-primary" id="botonvalidar" value="Confirmar"
+          onclick="validar(); validarTodos();">
+          <a href="miCuenta.html">No tengo cuenta</a>
+       
+          </form>
+    </div>
+
+    
+</body>
+</html>

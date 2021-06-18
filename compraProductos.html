@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <!-- Fin header-->
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+      <div class="container-fluid" style="background-color: coral;">
+        <a class="navbar-brand" href="index.html" style="color: azure"
+          > <img src="./imagenes/obrero.png" style="width: 6%;"> Mi Tiendita</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="miCuenta.html"
+                >Mi cuenta</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="compraProductos.html">Compras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="carrito.html">Mi carro</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="login.html">Salir</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- fin HEADER -->
+    <div class="container">
+      <h1 style="text-align: center">Bienvenido a Mi compra</h1>
+      <hr />
+      <!-- CARTAS DE PRODUCTOS -->
+      <div class="row">
+        <div class="card" style="width: 23.5rem">
+          <img
+            src="./imagenes/taladro.jpg"
+            class="card-img-top"
+            alt="taladro"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Taladro bauker</h5>
+            <p class="card-text">
+              Taladro perfecto para construir, arreglar o reparar
+            </p>
+            <a href="#" class="btn btn-success" id="taladro"
+              >Añadir al carro $19.990</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 23.5rem">
+          <img
+            src="./imagenes/cajaH.jpg"
+            class="card-img-top"
+            alt="caja herramientas"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Caja de herramientas</h5>
+            <p class="card-text">
+              Caja perfecta para llevar sus repuestos, herramientas y demás
+            </p>
+            <a href="#" class="btn btn-success" id="cajaH">
+              Añadir al carro $15.000</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 23.5rem">
+          <img src="./imagenes/sierra.jpg" class="card-img-top" alt="sierra" />
+          <div class="card-body">
+            <h5 class="card-title">Sierra circular</h5>
+            <p class="card-text">
+              Sierra circular para realizar esos cortes de manera fenomenal.
+            </p>
+            <a href="#" class="btn btn-success" id="sierra"
+              >Añadir al carro $20.000</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 23.5rem">
+          <img
+            src="./imagenes/retromartillo.jpg"
+            class="card-img-top"
+            alt="retro martillo"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Retro Martillo</h5>
+            <p class="card-text">
+              Cansado de dar golpes con tu antiguo martillo ... Llego el nuevo
+              retro martillo que hace todo lo que tu hacias pero de forma
+              automatica aliviando el labor y el desgaste fisico al momento de
+              martillar. No te quedes sin el tuyo
+            </p>
+            <br />
+            <p>hasta Thor quiere este Retro martillo</p>
+            <a href="#" class="btn btn-success" id="retromartillo"
+              >Añadir al carro $13.000</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 23.5rem">
+          <img
+            src="./imagenes/carroH.jpg"
+            class="card-img-top"
+            alt="carro herramientas"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Carro de herramientas</h5>
+            <p class="card-text">
+              Sorprendete y espacioso carro de herramientas lleva el tuyo!
+            </p><br><br>
+            <a href="#" class="btn btn-success" id="carroh"
+              >Añadir al carro $23.000</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 23.5rem">
+          <img
+            src="./imagenes/soporteA.jpg"
+            class="card-img-top"
+            alt="soporte autos"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Soporte de vehiculos</h5>
+            <p class="card-text">
+              Para cuando te quedes varado en tu auto nada mejor que el nuevo
+              soporte para que soportes esas horas de espera jajaja
+            </p><br>
+            <a href="#" class="btn btn-success" id="soportea"
+              >Añadir al carro $12.990</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 23.5rem">
+          <img
+            src="./imagenes/niñosH.jpg"
+            class="card-img-top"
+            alt="bob el constructor"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Herramientas de bob el constructor</h5>
+            <p class="card-text">
+              En exclusiva como primera colaboración de mi Tiendita traemos el
+              set de bob el constructor!!
+            </p>
+            <a href="#" class="btn btn-success" id="niñosh"
+              >Añadir al carro $99.999</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 23.5rem">
+          <img src="./imagenes/bob.jpg" class="card-img-top" alt="Bob covid" />
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center">
+              Bob el constructor se cuida
+            </h5>
+            <p class="card-text" style="text-align: center">
+              En esta pandemia muchos andan sin su mascarilla por eso tu no seas
+              como ellos y se como bob. Usa tu mascarilla
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 23.5rem">
+          <img
+            src="./imagenes/bobJuguete.jpg"
+            class="card-img-top"
+            alt="Juguete Bob"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Juguete Bob el constructor</h5>
+            <p class="card-text">
+              Nuevo juguete bob el constructor por si no quieres construirte ni
+              cansarte construyendo puedes tener tu juguete y jugar a construir.
+            </p><br>
+            <a href="#" class="btn btn-success" id="bob"
+              >Añadir al carro $19.990</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 23.5rem">
+          <img
+            src="./imagenes/utensilios.jpg"
+            class="card-img-top"
+            alt="utensilios"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Utensilios cocina</h5>
+            <p class="card-text">
+              Lleva hoy estos excelentes utensilios para cocinar, para voltear
+              esa hamburguesa del bajon, para cucharear la sopa de la abuela y
+              para colar ese aceite de las papas fritas
+            </p><br><p></p>
+            <a href="#" class="btn btn-success" id="utensilios"
+              >Añadir al carro $8.000</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 23.5rem">
+          <img
+            src="./imagenes/setCocina.jpg"
+            class="card-img-top"
+            alt="Set Cocina"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Set cocina</h5>
+            <p class="card-text">
+              Lleve hoy el nuevo set de cocina anti deslizante.
+            </p><br><br><br>
+            <a href="#" class="btn btn-success" id="setcocina"
+              >Añadir al carro $59.990</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 23.5rem">
+          <img
+            src="./imagenes/carretilla.png"
+            class="card-img-top"
+            alt="Carretilla"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Carretilla</h5>
+            <p class="card-text">
+              Carretilla hecha para que tome sus cosas y venga a comprar a Mi
+              Tiendita!!
+            </p>
+            <a href="#" class="btn btn-success" id="carretilla"
+              >Añadir al carro $19.990</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- fin cards -->
+    <!-- FOOTER -->
+<footer class="text-center text-lg-start bg-light text-muted">
+    <!-- Section: Social media -->
+    <section
+      class="d-flex justify-content-center  "
+    >      
+    </section>
+
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <div class="col-md-2 col-lg-2 col-xl-3 mb-3">
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i> <img src="./imagenes/obrero.png" style="width: 20%;">Mi Tiendita 
+            </h6>
+            <p>
+              Empresa de venta especializada en utensilios de cocina y construcción.
+            </p>
+          </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+              Productos
+            </h6>
+            <p>
+              <a href="#taladro" class="text-reset">Taladros</a>
+            </p>
+            <p>
+              <a href="#bob" class="text-reset">Juguetes</a>
+            </p>
+            <p>
+              <a href="#utensilios" class="text-reset">Utensilios cocina</a>
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Contacto
+            </h6>
+            <p><i class="fas fa-home me-2"></i> Chile, Santiago Calle falsa #123,CL</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              miTiendita@gmail.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 56 234 567 88</p>
+            <p><i class="fas fa-print me-3"></i> + 56 234 567 89</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" >Mi tiendita</a>
+    </div>
+
+  </footer>
+    </div>
+  </body>
+</html>
